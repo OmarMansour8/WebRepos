@@ -93,7 +93,7 @@
                 </tr>
             </table>
         </asp:Panel>
-        <asp:Panel ID="Panel2" runat="server" CssClass="auto-style22" Width="860px" Height="660px" ForeColor="#CC3300">
+        <asp:Panel ID="Panel2" runat="server" CssClass="auto-style22" Width="860px" Height="1660px" ForeColor="#CC3300">
             &nbsp;<br />
             <br />
             <br />

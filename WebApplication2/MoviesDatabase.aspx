@@ -1,5 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/adminMaster.Master" AutoEventWireup="true" CodeBehind="MoviesDatabase.aspx.cs" Inherits="WebApplication3.MoviesDatabase" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <style type="text/css">
+
+         /* .omar1234 {
+         background-color: white;
+         color: black;
+         border: 2px solid red;
+         border-radius: 8px;
+        }
+        .omar1234:hover {
+         background-color: red; 
+         color: white;         
+        }*/
+     </style>
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
     <table class="auto-style1">
@@ -10,13 +23,13 @@
     </tr>
     <tr>
         <td style="text-align: center">
-            <asp:Button ID="Button1" runat="server" Text="Add Movies" />
+            <asp:Button ID="Button1" CssClass="omar1234" runat="server" Text="Add Movies" PostBackUrl="~/AddNewMovies.aspx" />
         </td>
         <td style="text-align: center">
-            <asp:Button ID="Button2" runat="server" Text="Delete Movies" />
+            <asp:Button ID="Button2" CssClass="omar1234" runat="server" Text="Delete Movies" />
         </td>
         <td style="text-align: center">
-            <asp:Button ID="Button3" runat="server" Text="Edit Movies" />
+            <asp:Button ID="Button3" CssClass="omar1234" runat="server" Text="Edit Movies" />
         </td>
     </tr>
 </table>

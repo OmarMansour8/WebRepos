@@ -2,7 +2,27 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="UserName" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
+    <table class="auto-style1">
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="text-align: center">
+            <asp:Button ID="Button1" CssClass="omar1234" runat="server" Text="Add User" PostBackUrl="~/AddNewMovies.aspx" />
+        </td>
+        <td style="text-align: center">
+            <asp:Button ID="Button2" CssClass="omar1234" runat="server" Text="Delete User" />
+        </td>
+        <td style="text-align: center">
+            <asp:Button ID="Button3" CssClass="omar1234" runat="server" Text="Edit User" />
+        </td>
+    </tr>
+</table>
+<br />
+<br />
+<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="UserName" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="416px" Width="1309px">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
             <asp:BoundField DataField="Fname" HeaderText="Fname" SortExpression="Fname" />
@@ -25,4 +45,5 @@
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database2.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [Members]"></asp:SqlDataSource>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 </asp:Content>
