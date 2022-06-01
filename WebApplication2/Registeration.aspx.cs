@@ -28,6 +28,13 @@ namespace WebApplication3
                 cmdinsert.ExecuteNonQuery();
                 conn.Close();
 
+
+
+                HttpCookie koko = new HttpCookie("userInfo1");
+                koko.Values.Add("fName", FnameTB.Text);
+                koko.Values.Add("lName", LnameTB.Text);
+                koko.Expires = DateTime.Now.AddDays(3);
+                Response.Cookies.Add(koko);
                 lblMsg.Text = "Welcome " + FnameTB.Text + " your account has been created succefully";
             }
             catch (SqlException err)

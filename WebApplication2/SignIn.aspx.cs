@@ -27,6 +27,17 @@ namespace WebApplication3
 
             if (reader.Read())
             {
+                string fName = (string)reader.GetValue(0);
+                string lName = (string)reader.GetValue(1);
+
+                HttpCookie coco = new HttpCookie("userInfo");
+                coco.Values.Add("usern", UsernameTB.Text);
+                coco.Values.Add("userp", PasswordTB.Text);
+                coco.Values.Add("fName", fName);
+                coco.Values.Add("lName", lName);
+                coco.Expires = DateTime.Now.AddDays(3);
+                Response.Cookies.Add(coco);
+
                 if (UsernameTB.Text == "Admin2021")
                 {
                     Response.Redirect("~/adminHome.aspx");

@@ -9,8 +9,20 @@ namespace WebApplication3
 {
     public partial class userMaster : System.Web.UI.MasterPage
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            string fName = "";
+            string lName = "";
+
+            if (Request.Cookies["userInfo"] != null) {
+                 fName = Request.Cookies["userInfo"].Values["fName"];
+                 lName = Request.Cookies["userInfo"].Values["lName"];
+
+                
+
+            }
+            userNameLB.Text = fName + " " + lName;
 
         }
     }

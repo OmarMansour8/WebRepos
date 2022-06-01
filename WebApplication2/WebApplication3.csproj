@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddNewMovies.aspx" />
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
@@ -157,6 +158,13 @@
     <Content Include="adminHome.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewMovies.aspx.cs">
+      <DependentUpon>AddNewMovies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewMovies.aspx.designer.cs">
+      <DependentUpon>AddNewMovies.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminMaster.Master.cs">
       <DependentUpon>adminMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

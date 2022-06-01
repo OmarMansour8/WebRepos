@@ -33,7 +33,7 @@
                     &nbsp;
                     <asp:HyperLink ID="HyperLink7" CssClass="omar" runat="server" NavigateUrl="~/SignIn.aspx" Font-Underline="False" Height="30px" Width="100px">Suggestions</asp:HyperLink>
                     &nbsp;
-                    <asp:HyperLink ID="userNameLB" CssClass="omar" runat="server" NavigateUrl="~/userData1.aspx" Font-Underline="False" Height="30px" Width="130px" Target="ContentPlaceHolder1">Omar Mansour</asp:HyperLink>
+                    <asp:HyperLink ID="userNameLB" CssClass="omar" runat="server" NavigateUrl="~/userData1.aspx" Font-Underline="False" Height="30px" Width="130px" Target="ContentPlaceHolder1" ForeColor="Black"></asp:HyperLink>
                 &nbsp;&nbsp;<asp:HyperLink CssClass="omar" runat="server" NavigateUrl="~/SignIn.aspx" Font-Underline="False" Height="30px" Width="100px" ID="HyperLink11">Logout</asp:HyperLink>
                 </td>
             </tr>
